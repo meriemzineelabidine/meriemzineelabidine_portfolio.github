@@ -1,0 +1,132 @@
+.about{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+}
+.img_about{
+    width: 50%;
+   
+}
+.img_about img{
+    width:100%;
+    margin-left:-150px; 
+}
+
+.description_about{
+    width: 50%;
+    color: #fff;
+
+}
+.description_about h2{
+    margin: 120px 10px 0px 0px;
+    font-size: 30px;
+}
+.description_about h2 span{
+    color: gold;
+}
+.description_about h3{
+    margin: 10px 0;  
+    font-size: 40px;
+}
+.description_about h3 span{
+    color: gold;
+}
+.description_about p{
+    color: #c8c6c6;
+    font-size: 18px;
+    line-height: 1.7;
+    
+}
+
+
+
+
+/*responsive*/
+
+@media screen and (max-width:974px){
+    .about{
+        height: auto;
+    }
+    .about .img_about{
+        width: 50%;
+    }
+    .about .img_about img{
+        width: 100%;
+        margin-left: -100px;
+        margin-top: 50px;
+    }
+    .about .description_about{
+        width: 50%;
+    }
+    .about .description_about h2{
+        font-size: 25px;
+    }
+    .about .description_about h3{
+        font-size: 35px;
+    }
+    .about .description_about p{
+        font-size: 15px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:648px){
+    .about .description_about h2{
+        font-size: 20px;
+    }
+    .about .description_about h3{
+        font-size: 30px;
+    }
+    .about .description_about p{
+        font-size: 15px;
+    }
+    .about .img_about img{
+        width: 100%;
+        margin-left: -60px;
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width:555px){
+    .about .img_about{
+        width: 45%;
+    }
+    .about .description_about{
+        width: 55%;
+    }
+    .about .img_about img{
+        width: 100%;
+        height: 270px;
+        margin-left: -50px;
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:531px){
+    .about{
+        flex-direction: column;
+      
+    }
+    .about .img_about img{
+        display: none;
+    }
+    .about .description_about{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+       
+       
+    }
+}
+@media screen and (max-width:450px){
+    .about .description_about h3{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:370px){
+    .about .description_about h3{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,116 @@
+
+.contact{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+    margin-bottom: 80px;
+    
+}
+.contact h1{
+    color:#fff;
+    margin-bottom: 25px;
+    margin-top: 80px;
+}
+.form_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form_contact h4{
+    color: #fff;
+}
+.form_contact .input {
+    width: 60%;
+}
+
+.form_contact .input input{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.form_contact .input textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.form_contact input:focus{
+    border-color: gold;
+    outline: none;
+}
+.form_contact textarea:focus{
+    border-color: gold;
+    outline: none;
+}
+.form_contact .btn_message{
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+   
+}
+.form_contact .error{
+    color: red;
+}
+.alert{
+    color: gold;
+    background-color: #fff;
+    width: 30%;
+    margin: auto;
+   margin-top: 50px;
+   text-align: center;
+   padding: 20px;
+   font-size: 18px;
+   border-radius: 3px;
+   font-weight: bold;
+
+}
+
+
+/*responsive*/
+
+@media screen and (max-width:590px){
+    .contact h1{
+        font-size: 25px;
+    }
+    .contact .form_contact .input h4{
+        font-size: 15px;
+    }
+    .form_contact .input input{
+        font-size: 15px;
+    }
+    .form_contact .input textarea{
+        font-size: 15px;
+    }
+    .form_contact .btn_message{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:391px){
+    .form_contact .input input{
+        font-size: 12px;
+    }
+    .form_contact .input textarea{
+        font-size: 12px;
+    }
+    .form_contact .btn_message{
+        font-size: 10px;
+    }
+}

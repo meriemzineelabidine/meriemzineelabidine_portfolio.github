@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+}
+
+.header{
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #afafaf93;
+    z-index: 100;
+   
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 80px;
+    
+}
+.header nav .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+.header nav .logo span{
+    color: gold;
+}
+.header nav .links {
+    display: flex;
+}
+.header nav .links li{
+    position: relative;
+    margin: 0 25px;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+}
+.header nav .links li::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    background-color: gold;
+    left: 0;
+    transition: 0.3s;
+}
+.header nav .links li:hover::after{
+    width: 100%;
+}
+.header nav .links li.active::after{
+  width: 100%;
+}
+.header nav .links li a {
+    color: #c8c6c6;
+    font-size: 17px;
+}
+.header nav .social_links a{
+    color: gold;
+    font-size: 24px;
+    margin-left: 15px;
+}
+.header nav .social_links a:hover {
+    color: #fff;
+}
+.hero-section .container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+   
+}
+.hero-section{
+    height: 100vh;
+    overflow: hidden;
+   
+}
+.hero-section .container .text{
+    width: 60%;
+    
+
+}
+.hero-section .container .text h1{
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    
+}
+.hero-section .container .text span{
+    font-size: 30px;
+    color: gold;
+}
+.hero-section .container .text p{
+    color: #c8c6c6;
+    font-size: 18px;
+    margin: 10px 0 50px;
+    line-height: 1.7;
+}
+
+.hero-section .container .text .btn{
+color: #fff;
+border: 1px solid gold;
+background-color: gold;
+padding: 12px 40px;
+border-radius: 5px;
+transition: 0.3s;
+}
+.hero-section .container .text .btn:hover{
+    background: transparent;
+}
+.hero-section .img-pers{
+     width: 35%;
+     min-height: 100vh; 
+}
+.hero-section .img-pers img{
+    margin-top: 140px;
+    width: 100%;
+}
+
+.header nav .hamburger{
+    display: none;
+}
+
+
+
+
+
+
+
+/*responsive */
+
+
+@media screen and (min-width:973px) and (max-width: 1126px)  {
+    .hero-section .container .text h1 {
+        font-size: 35px;
+
+    }
+}
+@media screen and (max-width:974px) {
+    .header nav .links{
+        position: absolute;
+        flex-direction: column;
+        background-color: #000;
+        top: 100%;
+        right: -450px;
+        border-left: 1px solid #444444a8;
+        width: 400px;
+        height: 100vh;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.3;
+
+    }
+    .header nav .links.apparent{
+        right:0;
+       
+    }
+    .header nav .social_links{
+        display: none;
+    }
+    .header nav .hamburger{
+        display: block;
+        color: #fff;
+        font-size: 20px;
+    }
+    .hero-section{
+        height: auto;
+    }
+    .hero-section .container{
+        flex-direction: column;
+    }
+    .hero-section .container .text{
+        width: 80%;
+        margin-top: 120px;
+        margin-bottom:60px;
+        text-align: center;
+    }
+    .hero-section .container .text p{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    .hero-section .container .img-pers{
+        width: 50%;
+        margin-top: -30px;
+    }
+
+    .hero-section .container .text span{
+        font-size: 20px;
+        
+    }
+    .hero-section .container .text h1{
+        font-size: 35px;
+        
+    }
+   
+
+}
+@media screen and (max-width:537px){
+    .hero-section .container .text h1{
+        font-size: 25px;
+        
+    }
+}
+@media screen and(max-width:450px){
+    .hero-section .container .text p{
+        margin: 5px 0;
+        font-size: 10px;
+       
+    }
+    .hero-section .container .img-pers{
+        width: 20%;
+        margin-top: -20px;
+        
+      
+    }
+    .hero-section .container .text span{
+        font-size: 15px;
+      ;
+        
+    }
+    .hero-section .container .text h1{
+        font-size: 25px;
+        
+    }
+    
+}
+@media screen and (max-width:384px){
+    .hero-section .container .text h1{
+        font-size: 20px;
+        
+    }
+}
+@media screen and (max-width:307px){
+    .hero-section .container .text h1{
+        font-size: 18px;
+        
+    }
+}
+
+

@@ -1,0 +1,86 @@
+.container_skills{
+    width: 85%;
+    margin: auto;
+   
+      
+}
+.skills{
+    width: 60%;
+    margin: 40px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(134, 134, 134, 0.218) ;
+    background-color: rgb(17, 16, 16);
+   
+    
+}
+.skills li{
+    list-style: none;
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px gray;
+    transition: all cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bar:hover{
+    box-shadow: 0px 3px 10px white;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,rgb(245, 212, 23)0%,gold 100%);
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.container_skills h1{
+    margin-bottom: -20px;
+   
+}
+.skills h3{
+    margin: 5px; 
+}
+
+
+
+
+/*responsive*/
+@media screen and (max-width:590px){
+    .container_skills h1{
+        font-size: 25px;
+    }
+    .container_skills .skills li h3{
+        font-size: 16px;
+    }
+    .container_skills .skills li .bar{
+        height: 10px;
+    }
+}
+@media screen and (max-width:391px){
+    .container_skills h1{
+        font-size: 23px;
+    }
+    .container_skills .skills li h3{
+        font-size: 14px;
+    }
+    .container_skills .skills li .bar{
+        height: 8px;
+    }
+}
