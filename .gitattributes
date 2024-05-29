@@ -1,2 +1,2 @@
 # Spécifiez les fins de ligne pour les fichiers spécifiques
-node_modules/rxjs/dist/cjs/internal/operators/*.js text eol=lf
+package-lock.json text eol=lf
